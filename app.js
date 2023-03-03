@@ -73,7 +73,7 @@ app.post("/compose",function(req,res) {
   });
 
   // post.save();
-    post.save(function(err){
+    post.save().then(err=>{
    if (!err){res.redirect("/");}
  });
   // posts.push(post);
